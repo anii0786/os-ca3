@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+{
+    int burst_t[20],process[20],waiting_t[20],turnaround_t[20],priority[20];
+    int i,j,n,total=0;
+    int pos,temp,avg_waiting_t,avg_turnaround_t;
+    printf("Enter Total Number of Process:");
+    scanf("%d",&n);
+
+    printf("\nEnter Burst Time and Priority\n");
+    for(i=0;i<n;i++)
+    {
+        printf("\nProcess[%d]\n",i+1);
+        printf("Burst Time:");
+        scanf("%d",&burst_t[i]);
+        printf("Priority:");
+        scanf("%d",&priority[i]);
+        process[i]=i+1;           
+    }
+
+    //sorting burst time, priority and process number in ascending order using selection sort
+    for(i=0;i<n;i++)
+    {
+        pos=i;
+        for(j=i+1;j<n;j++)
+        {
+            if(priority[j]<priority[pos])
+                pos=j;
+        }
