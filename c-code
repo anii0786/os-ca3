@@ -1,8 +1,8 @@
 #include<stdio.h>
-#include<conio.h>
+#include<conio.h>//for getch()
 int main()
 {
-int Burst_Time[10],Process_no[10],Waiting_Time[10],Turnaround_Time[10];
+int Burst_Time[10],Process_no[10],Waiting_Time[10],Turnaround_Time[10];//creating arrays for all
 int Arrival_Time[10],Priority[10],i,j,Number_of_Process,total=0,flag,temp,Avg_Waiting,Avg_Turnaround;
 printf("Enter Number of Process:");
 scanf("%d",&Number_of_Process);
@@ -46,7 +46,7 @@ total+=Waiting_Time[i];
     }
 Avg_Waiting=total/Number_of_Process;
 total=0;
-printf("\nProcess\t       B T              W T                T A T");
+printf("\nProcess\t       B T             W T               T A T");
 for(i=0;i<Number_of_Process;i++)
     {
         Turnaround_Time[i]=Burst_Time[i]+Waiting_Time[i];
