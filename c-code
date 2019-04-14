@@ -46,7 +46,7 @@ total+=Waiting_Time[i];
     }
 Avg_Waiting=total/Number_of_Process;
 total=0;
-printf("\nProcess\t       B T             W T               T A T");
+printf("\nProcess\t       B T              W T                T A T");
 for(i=0;i<Number_of_Process;i++)
     {
         Turnaround_Time[i]=Burst_Time[i]+Waiting_Time[i];
