@@ -3,7 +3,9 @@
 int main()
 {
         int Burst_Time[20],Process_no[20],Waiting_Time[20],Turnaround_Time[20];//creating arrays for all
-        int Arrival_Time[20],Priority[20],i,j,Number_of_Process,total=0,flag,temp,Avg_Waiting,Avg_Turnaround;
+        int Arrival_Time[20],Priority[20],i,j,Number_of_Process,flag,temp;
+        float Avg_Waiting,Avg_Turnaround;
+        float total=0;
         printf("Enter Number of Process:");
         scanf("%d",&Number_of_Process);
         printf("\nEnter Burst Time and Priority and Arrival Time\n");
