@@ -56,8 +56,8 @@ int main()
                      printf("\nProcess %d \t %d\t \t   %d\t\t%d",Process_no[i],Burst_Time[i],Waiting_Time[i],Turnaround_Time[i]);
             }
                      Avg_Turnaround=total/Number_of_Process;
-                     printf("\n\nAvg W T= %d",Avg_Waiting);
-                     printf("\nAvg T A T= %d",Avg_Turnaround);
+                     printf("\n\nAvg W T= %f",Avg_Waiting);
+                     printf("\nAvg T A T= %f",Avg_Turnaround);
                      return 0;
                      getch();
             }
